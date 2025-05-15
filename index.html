@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stittsville Auto Detailing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #ffffff;
             color: #0033cc;
             margin: 0;
@@ -15,13 +16,16 @@
         header {
             background-color: #0033cc;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
         }
         nav {
             text-align: center;
             background-color: #f0f0f0;
             padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: #0033cc;
@@ -31,15 +35,22 @@
         }
         section {
             padding: 2rem;
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
+        }
+        .info-box {
+            border: 2px solid #0033cc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: #f9f9f9;
         }
         footer {
             text-align: center;
             background-color: #0033cc;
             color: white;
             padding: 1rem;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -47,6 +58,10 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: #0033cc;
+        }
+        .intro {
+            font-style: italic;
+            margin-top: 1rem;
         }
     </style>
 </head>
@@ -57,27 +72,41 @@
     </header>
 
     <nav>
+        <a href="#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <section id="about">
+        <div class="info-box">
+            <h2>About Us</h2>
+            <p class="intro">We are high school students passionate about cars and committed to building connections within the community. Our goal is to provide high-quality, affordable detailing services while gaining experience and giving back to our local area.</p>
+        </div>
+    </section>
+
     <section id="services">
-        <h2>What We Do</h2>
-        <p>We provide high-quality car detailing services that include both full interior and exterior cleaning. Our process involves deep-cleaning carpets and seats, dashboard polishing, tire shine, wax protection, and more. We aim to leave your car looking and feeling brand new.</p>
+        <div class="info-box">
+            <h2>What We Do</h2>
+            <p>We offer full-service car detailing that includes deep cleaning of both the interior and exterior. Services include vacuuming, shampooing carpets and seats, dashboard polishing, tire shine, exterior hand wash, and wax protection. We treat each car with care as if it were our own.</p>
+        </div>
     </section>
 
     <section id="pricing">
-        <h2>Pricing</h2>
-        <p class="highlight">$120 – Full Interior & Exterior Detailing</p>
-        <p>We believe in transparent, flat-rate pricing with no hidden fees.</p>
+        <div class="info-box">
+            <h2>Pricing</h2>
+            <p class="highlight">$120 – Full Interior & Exterior Detailing</p>
+            <p>We believe in honest, flat-rate pricing with no surprise fees. Quality detailing at a great value.</p>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Service Area:</strong> Stittsville and nearby towns</p>
-        <p><strong>Phone:</strong> (Your Contact Number Here)</p>
-        <p>To book your appointment, give us a call or text today!</p>
+        <div class="info-box">
+            <h2>Contact Us</h2>
+            <p><strong>Service Area:</strong> Stittsville and nearby towns</p>
+            <p><strong>Phone:</strong> (Your Contact Number Here)</p>
+            <p>Call or text us to book your appointment or ask any questions. We're friendly, reliable, and ready to make your car shine!</p>
+        </div>
     </section>
 
     <footer>
